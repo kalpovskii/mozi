@@ -1,0 +1,111 @@
+footer {
+    background: #0D123C;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 0;
+    @media (max-width: $breakpoint768) {
+        padding: 35px 0;
+        flex-wrap: wrap;
+    }
+    // .footer__item
+    &__item {
+        flex: 0 1 50%;
+
+        @media (max-width: $breakpoint768) {
+            flex: 0 0 100%;
+            text-align: center;
+        }
+    }
+
+    // .footer__logo
+    &__logo {
+    }
+
+    // .footer__text
+    &__text {
+        margin-top: 25px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: $whiteColor;
+        max-width: 295px;
+        @media (max-width: $breakpoint768) {
+            max-width: none;
+        }
+    }
+
+    // .footer__lists
+    &__lists {
+        display: flex;
+        justify-content: space-between;
+        max-width: 565px;
+        margin-left: auto;
+        @media (max-width: $breakpoint768) {
+            max-width: 100%;
+            margin-top: 25px;
+            padding-right: 116px;
+        }
+        @media (max-width: $breakpoint480) {
+            padding-right: 40px;
+        }
+        @media (max-width: $breakpoint375) {
+            padding-right: 10px;
+            gap: 10px;
+        }
+    }
+
+    // .footer__lists-item
+    &__lists-item {
+    }
+
+    // .footer__list-title
+    &__list-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        color: $whiteColor;
+    }
+
+    // .footer__list
+    &__list {
+        margin-top: 30px;
+    }
+
+    // .footer__list-item
+    &__list-item {
+        margin-top: 20px;
+    }
+
+    // .footer__link
+    &__link {
+    }
+
+    // .footer__list-item-link
+    &__list-item-link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $whiteColor;
+    }
+
+    // .footer__social
+    &__social {
+        margin-top: 30px;
+        display: flex;
+        gap: 15px;
+    }
+
+    // .footer__social-item
+    &__social-item {
+    }
+
+    // .footer__social-link
+    &__social-link {
+    }
+}
